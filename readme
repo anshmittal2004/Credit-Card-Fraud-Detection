@@ -1,0 +1,52 @@
+# Credit Card Fraud Detection
+
+## Overview
+This project is a **Credit Card Fraud Detection System** built using **Streamlit, Pandas, Seaborn, and Scikit-Learn**. It loads a dataset containing transaction details, preprocesses the data, trains a **Random Forest Classifier**, and provides a **fraud detection system** with a user-friendly UI.
+
+## Features
+- 📂 **Dataset Loading**: Reads and displays transaction data from `creditcard.csv`.
+- 🛠️ **Data Preprocessing**: Normalizes transaction amounts and removes unnecessary features.
+- 🔍 **Fraud Detection Model**: Trains a Random Forest Classifier to detect fraudulent transactions.
+- 📊 **Data Visualization**: Provides insights with fraud distribution and feature importance charts.
+- 🏦 **User Input for Prediction**: Allows users to enter transaction details and predict fraud probability.
+
+## Installation
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo/credit-card-fraud-detection.git
+   cd credit-card-fraud-detection
+   ```
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the Application**
+   ```bash
+   streamlit run app.py
+   ```
+
+## Usage
+- Upload the `creditcard.csv` dataset in the root directory.
+- Start the application and check dataset statistics.
+- Use the sidebar to input transaction details and check fraud probability.
+
+## Dataset
+- The dataset used is `creditcard.csv`, which contains transaction details such as **time, amount, and anonymized features**.
+- The target variable `Class` indicates fraud (`1`) or non-fraud (`0`).
+
+## Model
+- Uses **Random Forest Classifier** for prediction.
+- Trained on `80%` of the dataset, tested on `20%`.
+- Displays **accuracy score** and **classification report**.
+
+## Visualizations
+- **Fraud vs Non-Fraud Transactions**: Bar chart comparing fraud counts.
+- **Transaction Amount Distribution**: Histogram of transaction values.
+- **Feature Importance**: Identifies which features influence fraud detection most.
+
+## Contribution
+Feel free to fork, raise issues, and contribute to improvements!
+
+## License
+This project is **open-source** under the **MIT License**.
+
